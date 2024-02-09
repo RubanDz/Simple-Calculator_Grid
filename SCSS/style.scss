@@ -1,8 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import '/SCSS/reset';
 @mixin border {
     border: 1px solid #4FFF9A;
     border-radius: 4px;
@@ -17,8 +13,8 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    @include border;
     gap: 2px;
+    @include border;
     .grid__item {
         @include border;
         font-size: 20px;
