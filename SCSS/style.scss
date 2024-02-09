@@ -1,0 +1,57 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@mixin border {
+    border: 1px solid #4FFF9A;
+    border-radius: 4px;
+}
+@mixin fontStyleandBack {
+    font-style: italic;
+    background-color: rgb(120, 230, 230);
+}
+.grid-wrapper {
+    width: 294px;
+    height: 358px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    @include border;
+    gap: 2px;
+    .grid__item {
+        @include border;
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 65.5px;
+        background-color: aqua;
+    }
+    .grid__item_input {
+        grid-area: 1/1/1/5;
+        background-color: #4FFF9A80;
+    }
+    .grid__item-4 {
+        grid-area: 2/4/4/4;
+        @include fontStyleandBack;
+    }
+    .grid__item-11 {
+        grid-area: 4/4/6/4;
+        @include fontStyleandBack;
+    }
+    .grid__item-13 {
+        grid-area: 5/2/5/4;
+        @include fontStyleandBack;
+    }
+}
+     
+   
+     
+
+
+
+       
+ 
+        
+    
+
